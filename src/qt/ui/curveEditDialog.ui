@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>514</width>
-    <height>731</height>
+    <width>531</width>
+    <height>553</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -24,9 +24,9 @@
     <widget class="QLabel" name="label">
      <property name="font">
       <font>
-       <pointsize>15</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <pointsize>10</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
@@ -124,9 +124,9 @@ border-radius: 10px;
       <widget class="QGroupBox" name="groupBox">
        <property name="font">
         <font>
-         <pointsize>14</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
         </font>
        </property>
        <property name="title">
@@ -158,6 +158,13 @@ border-radius: 10px;
             <width>32</width>
             <height>32</height>
            </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
           </property>
           <property name="text">
            <string>X</string>
@@ -213,6 +220,13 @@ border-radius: 10px;
             <height>16777215</height>
            </size>
           </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
           <property name="text">
            <string>OK</string>
           </property>
@@ -241,6 +255,13 @@ border-radius: 10px;
             <height>16777215</height>
            </size>
           </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
           <property name="text">
            <string>No</string>
           </property>
@@ -262,6 +283,13 @@ border-radius: 10px;
             <width>32</width>
             <height>32</height>
            </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
           </property>
           <property name="text">
            <string>Y</string>
@@ -311,6 +339,13 @@ border-radius: 10px;
             <height>16777215</height>
            </size>
           </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
           <property name="text">
            <string>OK</string>
           </property>
@@ -339,6 +374,13 @@ border-radius: 10px;
             <height>16777215</height>
            </size>
           </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
           <property name="text">
            <string>No</string>
           </property>
@@ -363,9 +405,9 @@ border-radius: 10px;
        </property>
        <property name="font">
         <font>
-         <pointsize>14</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
         </font>
        </property>
        <property name="title">
@@ -398,6 +440,13 @@ border-radius: 10px;
             <height>32</height>
            </size>
           </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
           <property name="text">
            <string>W</string>
           </property>
@@ -419,6 +468,13 @@ border-radius: 10px;
             <width>32</width>
             <height>32</height>
            </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
           </property>
           <property name="text">
            <string>H</string>
