@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FileInput</class>
+ <widget class="QWidget" name="FileInput">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>387</width>
+    <height>31</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Select File</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="margin">
+    <number>2</number>
+   </property>
+   <item>
+    <widget class="QLineEdit" name="leFileName"/>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pbBrowse">
+     <property name="text">
+      <string>Browse</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pbBrowse</sender>
+   <signal>clicked()</signal>
+   <receiver>FileInput</receiver>
+   <slot>onBrowse()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>324</x>
+     <y>9</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>294</x>
+     <y>31</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>onBrowse()</slot>
+ </slots>
+</ui>
