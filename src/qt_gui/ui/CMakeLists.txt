@@ -1,0 +1,10 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.0.2)
+
+project(ui)
+
+FIND_PACKAGE( Qt5Widgets )
+
+SET(CMAKE_INCLUDE_CURRENT_DIR ON)
+SET(CMAKE_AUTOUIC ON) 
+
+QT5_WRAP_UI(ui_aboutDialog.h aboutDialog.ui)
