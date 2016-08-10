@@ -1,137 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>AWAVEDialog</class>
- <widget class="QDialog" name="AWAVEDialog">
+ <class>awaveSlicingDialog</class>
+ <widget class="QDialog" name="awaveSlicingDialog">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>360</width>
-    <height>657</height>
+    <width>363</width>
+    <height>630</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>AWAVE Slicing</string>
+   <string>Dialog</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
+  <layout class="QVBoxLayout" name="verticalLayout_3">
    <item>
-    <widget class="QLabel" name="AWAVESlicing">
+    <widget class="QGroupBox" name="gbAWAVESlicing">
      <property name="font">
       <font>
-       <pointsize>16</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
      </property>
-     <property name="styleSheet">
-      <string notr="true">border-radius: 8px;
-border: 1px solid;
-border-color: rgb(0, 0, 0);</string>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
-     </property>
-     <property name="text">
+     <property name="title">
       <string>AWAVE Slicing</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="leftMargin">
+       <number>3</number>
+      </property>
+      <property name="topMargin">
+       <number>3</number>
+      </property>
+      <property name="rightMargin">
+       <number>3</number>
+      </property>
+      <property name="bottomMargin">
+       <number>3</number>
+      </property>
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <item row="0" column="0" colspan="2">
+       <widget class="QariSliderInput" name="numSlicesInput">
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="label">
+         <string>Num Slices       </string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QariSliderInput" name="numRotSectsInput">
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="label">
+         <string>Rotation Sects</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Normal Axis</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QComboBox" name="axisChoice">
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string>X-Axis</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Y-Axis</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Z-Axis</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
     </widget>
-   </item>
-   <item>
-    <layout class="QGridLayout" name="gridLayout">
-     <property name="leftMargin">
-      <number>2</number>
-     </property>
-     <property name="topMargin">
-      <number>2</number>
-     </property>
-     <property name="rightMargin">
-      <number>2</number>
-     </property>
-     <property name="bottomMargin">
-      <number>2</number>
-     </property>
-     <property name="verticalSpacing">
-      <number>6</number>
-     </property>
-     <item row="0" column="0">
-      <widget class="QLabel" name="tlNumSlices">
-       <property name="text">
-        <string>Num Slices</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="1">
-      <widget class="QSlider" name="numSlicesSlider">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="2">
-      <widget class="QLineEdit" name="numSlicesInput"/>
-     </item>
-     <item row="1" column="0">
-      <widget class="QLabel" name="tlRotationSects">
-       <property name="text">
-        <string>Rotation Sects</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
-      <widget class="QSlider" name="NumRotSectsSlider">
-       <property name="minimumSize">
-        <size>
-         <width>140</width>
-         <height>0</height>
-        </size>
-       </property>
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="2">
-      <widget class="QLineEdit" name="NumRotSectsInput"/>
-     </item>
-     <item row="2" column="0">
-      <widget class="QLabel" name="tlNormalAxis">
-       <property name="text">
-        <string>Normal Axis</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="1" colspan="2">
-      <widget class="QComboBox" name="AxisChoice">
-       <item>
-        <property name="text">
-         <string>X-Axis</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Y-Axis</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Z-Axis</string>
-        </property>
-       </item>
-      </widget>
-     </item>
-    </layout>
    </item>
    <item>
     <widget class="QGroupBox" name="gbSlicingBounds">
      <property name="font">
       <font>
-       <pointsize>15</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
      </property>
      <property name="title">
       <string>Slicing Bounds</string>
@@ -139,83 +128,62 @@ border-color: rgb(0, 0, 0);</string>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
-     <layout class="QGridLayout" name="gridLayout_2">
-      <property name="leftMargin">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
        <number>2</number>
+      </property>
+      <property name="leftMargin">
+       <number>3</number>
       </property>
       <property name="topMargin">
-       <number>2</number>
+       <number>3</number>
       </property>
       <property name="rightMargin">
-       <number>2</number>
+       <number>3</number>
       </property>
       <property name="bottomMargin">
-       <number>2</number>
+       <number>3</number>
       </property>
-      <property name="verticalSpacing">
-       <number>6</number>
-      </property>
-      <item row="0" column="0">
-       <widget class="QCheckBox" name="AutoBoundsButton">
+      <item>
+       <widget class="QCheckBox" name="autoBoundsButton">
         <property name="text">
          <string>Auto</string>
         </property>
        </widget>
       </item>
-      <item row="1" column="0">
-       <widget class="QLabel" name="StartButton">
-        <property name="minimumSize">
-         <size>
-          <width>89</width>
-          <height>0</height>
-         </size>
+      <item>
+       <widget class="QariSliderInput" name="StartLocationInput">
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
         </property>
-        <property name="text">
+        <property name="label">
          <string>Start Location</string>
         </property>
        </widget>
       </item>
-      <item row="1" column="1">
-       <widget class="QSlider" name="StartSlider">
-        <property name="minimumSize">
-         <size>
-          <width>140</width>
-          <height>0</height>
-         </size>
+      <item>
+       <widget class="QariSliderInput" name="EndLocationInput">
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
         </property>
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="2">
-       <widget class="QLineEdit" name="StartInput"/>
-      </item>
-      <item row="2" column="0">
-       <widget class="QLabel" name="EndButton">
-        <property name="text">
-         <string>End Location</string>
+        <property name="label">
+         <string>End Location   </string>
         </property>
        </widget>
-      </item>
-      <item row="2" column="1">
-       <widget class="QSlider" name="EndSlider">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="2">
-       <widget class="QLineEdit" name="EndInput"/>
       </item>
      </layout>
     </widget>
    </item>
    <item>
-    <widget class="QGroupBox" name="gbMachAngleOrButton">
+    <widget class="QGroupBox" name="groupBox">
      <property name="font">
       <font>
-       <pointsize>15</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
@@ -226,76 +194,75 @@ border-color: rgb(0, 0, 0);</string>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
-     <layout class="QGridLayout" name="gridLayoutMachAngleOrNumber">
+     <layout class="QGridLayout" name="gridLayout_2">
       <property name="leftMargin">
-       <number>2</number>
+       <number>3</number>
       </property>
       <property name="topMargin">
-       <number>2</number>
+       <number>3</number>
       </property>
       <property name="rightMargin">
-       <number>2</number>
+       <number>3</number>
       </property>
       <property name="bottomMargin">
+       <number>3</number>
+      </property>
+      <property name="spacing">
        <number>2</number>
       </property>
-      <property name="verticalSpacing">
-       <number>6</number>
-      </property>
       <item row="0" column="0">
-       <widget class="QRadioButton" name="AngleButton">
-        <property name="minimumSize">
-         <size>
-          <width>89</width>
-          <height>0</height>
-         </size>
+       <widget class="QRadioButton" name="angleButton">
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
         </property>
         <property name="text">
          <string>Angle</string>
         </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
        </widget>
       </item>
       <item row="0" column="1">
-       <widget class="QSlider" name="AngleSlider">
-        <property name="minimumSize">
-         <size>
-          <width>140</width>
-          <height>0</height>
-         </size>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
+       <widget class="QariSliderInput" name="angleInput">
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
         </property>
        </widget>
       </item>
-      <item row="0" column="2">
-       <widget class="QLineEdit" name="AngleInput"/>
-      </item>
       <item row="1" column="0">
-       <widget class="QRadioButton" name="NumberButton">
+       <widget class="QRadioButton" name="numberButton">
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
         <property name="text">
          <string>Number</string>
         </property>
        </widget>
       </item>
       <item row="1" column="1">
-       <widget class="QSlider" name="NumberSlider">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
+       <widget class="QariSliderInput" name="numberInput">
+        <property name="enabled">
+         <bool>false</bool>
         </property>
        </widget>
-      </item>
-      <item row="1" column="2">
-       <widget class="QLineEdit" name="NumberInput"/>
       </item>
      </layout>
     </widget>
    </item>
    <item>
-    <widget class="QGroupBox" name="gbOutputFile">
+    <widget class="QGroupBox" name="groupBox_2">
      <property name="font">
       <font>
-       <pointsize>15</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
@@ -306,38 +273,34 @@ border-color: rgb(0, 0, 0);</string>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
-     <layout class="QGridLayout" name="gridLayoutOutputFile">
-      <property name="leftMargin">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="spacing">
        <number>2</number>
+      </property>
+      <property name="leftMargin">
+       <number>3</number>
       </property>
       <property name="topMargin">
-       <number>2</number>
+       <number>3</number>
       </property>
       <property name="rightMargin">
-       <number>2</number>
+       <number>3</number>
       </property>
       <property name="bottomMargin">
-       <number>2</number>
+       <number>3</number>
       </property>
-      <property name="verticalSpacing">
-       <number>6</number>
-      </property>
-      <item row="0" column="0">
-       <widget class="QLineEdit" name="txtFileOutput"/>
-      </item>
-      <item row="0" column="1">
-       <widget class="QPushButton" name="fileButton">
-        <property name="text">
-         <string>...</string>
+      <item>
+       <widget class="QariFileInput" name="txtFileOutput">
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
         </property>
        </widget>
       </item>
-      <item row="1" column="0" colspan="2">
-       <widget class="QPlainTextEdit" name="outputTextDisplay">
-        <property name="readOnly">
-         <bool>true</bool>
-        </property>
-       </widget>
+      <item>
+       <widget class="QPlainTextEdit" name="outputTextDisplay"/>
       </item>
      </layout>
     </widget>
@@ -358,6 +321,51 @@ border-color: rgb(0, 0, 0);</string>
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QariFileInput</class>
+   <extends>QWidget</extends>
+   <header>qarilineedit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QariSliderInput</class>
+   <extends>QWidget</extends>
+   <header>qarisliderinput.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>angleButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>angleInput</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>60</x>
+     <y>332</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>242</x>
+     <y>331</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>numberButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>numberInput</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>60</x>
+     <y>365</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>242</x>
+     <y>364</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

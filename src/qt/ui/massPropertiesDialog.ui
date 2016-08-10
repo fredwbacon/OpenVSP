@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>236</width>
-    <height>559</height>
+    <width>238</width>
+    <height>537</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,7 +18,9 @@
     <widget class="QGroupBox" name="gbMassProperties">
      <property name="font">
       <font>
-       <pointsize>10</pointsize>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
      </property>
      <property name="title">
@@ -40,45 +42,6 @@
       <property name="bottomMargin">
        <number>2</number>
       </property>
-      <item row="0" column="0" colspan="2">
-       <layout class="QHBoxLayout" name="horizontalLayout">
-        <item>
-         <widget class="QLabel" name="NumSlices">
-          <property name="font">
-           <font>
-            <pointsize>8</pointsize>
-           </font>
-          </property>
-          <property name="text">
-           <string>Num Slice:</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="numSliceInput">
-          <property name="minimumSize">
-           <size>
-            <width>40</width>
-            <height>0</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>50</width>
-            <height>16777215</height>
-           </size>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSlider" name="numSlicesSlider">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
       <item row="1" column="0">
        <widget class="QComboBox" name="setChoice">
         <property name="sizePolicy">
@@ -89,7 +52,9 @@
         </property>
         <property name="font">
          <font>
-          <pointsize>8</pointsize>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
          </font>
         </property>
        </widget>
@@ -98,7 +63,9 @@
        <widget class="QPushButton" name="ComputeButton">
         <property name="font">
          <font>
-          <pointsize>8</pointsize>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
          </font>
         </property>
         <property name="text">
@@ -113,11 +80,27 @@
        <widget class="QCheckBox" name="drawCgButton">
         <property name="font">
          <font>
-          <pointsize>8</pointsize>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
          </font>
         </property>
         <property name="text">
          <string>Draw Cg</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="2">
+       <widget class="QariSliderInput" name="numSliceInput">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="label">
+         <string>Num Slice:</string>
         </property>
        </widget>
       </item>
@@ -128,7 +111,9 @@
     <widget class="QGroupBox" name="gbResults">
      <property name="font">
       <font>
-       <pointsize>10</pointsize>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
      </property>
      <property name="title">
@@ -156,7 +141,9 @@
          <widget class="QPushButton" name="TotalMass">
           <property name="font">
            <font>
-            <pointsize>8</pointsize>
+            <pointsize>11</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
            </font>
           </property>
           <property name="text">
@@ -168,7 +155,9 @@
          <widget class="QLineEdit" name="totalMassOutput">
           <property name="font">
            <font>
-            <pointsize>8</pointsize>
+            <pointsize>11</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
            </font>
           </property>
          </widget>
@@ -193,7 +182,7 @@
           </property>
           <property name="font">
            <font>
-            <pointsize>8</pointsize>
+            <pointsize>11</pointsize>
             <weight>50</weight>
             <bold>false</bold>
            </font>
@@ -207,7 +196,9 @@
          <widget class="QLineEdit" name="xCgOutput">
           <property name="font">
            <font>
-            <pointsize>8</pointsize>
+            <pointsize>11</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
            </font>
           </property>
          </widget>
@@ -222,7 +213,7 @@
           </property>
           <property name="font">
            <font>
-            <pointsize>8</pointsize>
+            <pointsize>11</pointsize>
             <weight>50</weight>
             <bold>false</bold>
            </font>
@@ -236,7 +227,9 @@
          <widget class="QLineEdit" name="yCgOutput">
           <property name="font">
            <font>
-            <pointsize>8</pointsize>
+            <pointsize>11</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
            </font>
           </property>
          </widget>
@@ -251,7 +244,7 @@
           </property>
           <property name="font">
            <font>
-            <pointsize>8</pointsize>
+            <pointsize>11</pointsize>
             <weight>50</weight>
             <bold>false</bold>
            </font>
@@ -265,7 +258,9 @@
          <widget class="QLineEdit" name="zCgOutput">
           <property name="font">
            <font>
-            <pointsize>8</pointsize>
+            <pointsize>11</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
            </font>
           </property>
          </widget>
@@ -290,7 +285,7 @@
           </property>
           <property name="font">
            <font>
-            <pointsize>8</pointsize>
+            <pointsize>11</pointsize>
             <weight>50</weight>
             <bold>false</bold>
            </font>
@@ -304,7 +299,9 @@
          <widget class="QLineEdit" name="IxxOutput">
           <property name="font">
            <font>
-            <pointsize>8</pointsize>
+            <pointsize>11</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
            </font>
           </property>
          </widget>
@@ -319,7 +316,9 @@
           </property>
           <property name="font">
            <font>
-            <pointsize>8</pointsize>
+            <pointsize>11</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
            </font>
           </property>
           <property name="text">
@@ -331,7 +330,9 @@
          <widget class="QLineEdit" name="IyyOutput">
           <property name="font">
            <font>
-            <pointsize>8</pointsize>
+            <pointsize>11</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
            </font>
           </property>
          </widget>
@@ -346,7 +347,9 @@
           </property>
           <property name="font">
            <font>
-            <pointsize>8</pointsize>
+            <pointsize>11</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
            </font>
           </property>
           <property name="text">
@@ -358,7 +361,9 @@
          <widget class="QLineEdit" name="IzzOutput">
           <property name="font">
            <font>
-            <pointsize>8</pointsize>
+            <pointsize>11</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
            </font>
           </property>
          </widget>
@@ -383,7 +388,9 @@
           </property>
           <property name="font">
            <font>
-            <pointsize>8</pointsize>
+            <pointsize>11</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
            </font>
           </property>
           <property name="text">
@@ -395,7 +402,9 @@
          <widget class="QLineEdit" name="IxyOutput">
           <property name="font">
            <font>
-            <pointsize>8</pointsize>
+            <pointsize>11</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
            </font>
           </property>
          </widget>
@@ -410,7 +419,9 @@
           </property>
           <property name="font">
            <font>
-            <pointsize>8</pointsize>
+            <pointsize>11</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
            </font>
           </property>
           <property name="text">
@@ -422,7 +433,9 @@
          <widget class="QLineEdit" name="IxzOutput">
           <property name="font">
            <font>
-            <pointsize>8</pointsize>
+            <pointsize>11</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
            </font>
           </property>
          </widget>
@@ -437,7 +450,9 @@
           </property>
           <property name="font">
            <font>
-            <pointsize>8</pointsize>
+            <pointsize>11</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
            </font>
           </property>
           <property name="text">
@@ -449,7 +464,9 @@
          <widget class="QLineEdit" name="IyzOutput">
           <property name="font">
            <font>
-            <pointsize>8</pointsize>
+            <pointsize>11</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
            </font>
           </property>
          </widget>
@@ -463,7 +480,9 @@
     <widget class="QGroupBox" name="gbFileExport">
      <property name="font">
       <font>
-       <pointsize>9</pointsize>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
      </property>
      <property name="title">
@@ -486,15 +505,13 @@
        <number>2</number>
       </property>
       <item>
-       <widget class="QLineEdit" name="fileExportOutput"/>
-      </item>
-      <item>
-       <widget class="QPushButton" name="fileExportButton">
-        <property name="text">
-         <string>...</string>
-        </property>
-        <property name="autoDefault">
-         <bool>false</bool>
+       <widget class="QariFileInput" name="qariFileInput">
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
         </property>
        </widget>
       </item>
@@ -503,6 +520,18 @@
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QariFileInput</class>
+   <extends>QWidget</extends>
+   <header>qarilineedit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QariSliderInput</class>
+   <extends>QWidget</extends>
+   <header>qarisliderinput.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>
