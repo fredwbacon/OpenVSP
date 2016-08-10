@@ -47,7 +47,7 @@
          </font>
         </property>
         <property name="label">
-         <string>Num Slices       </string>
+         <string>Num Slices      </string>
         </property>
        </widget>
       </item>
@@ -161,7 +161,7 @@
          </font>
         </property>
         <property name="label">
-         <string>End Location   </string>
+         <string>End Location  </string>
         </property>
        </widget>
       </item>
