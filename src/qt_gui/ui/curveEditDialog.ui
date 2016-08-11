@@ -31,7 +31,7 @@
      </property>
      <property name="styleSheet">
       <string notr="true">border: 1px solid rgb(0,0,0);
-border-radius: 10px;
+border-radius: 7px;
 </string>
      </property>
      <property name="text">
@@ -111,6 +111,12 @@ border-radius: 10px;
      </item>
      <item row="1" column="2" colspan="2">
       <widget class="QCheckBox" name="checkBox">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
        <property name="text">
         <string>Closed Curve</string>
        </property>
@@ -204,6 +210,9 @@ border-radius: 10px;
             <height>27</height>
            </size>
           </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhNone</set>
+          </property>
          </widget>
         </item>
         <item row="0" column="3">
@@ -263,7 +272,7 @@ border-radius: 10px;
            </font>
           </property>
           <property name="text">
-           <string>No</string>
+           <string>NO</string>
           </property>
           <property name="checkable">
            <bool>true</bool>
@@ -382,7 +391,10 @@ border-radius: 10px;
            </font>
           </property>
           <property name="text">
-           <string>No</string>
+           <string>NO</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
           </property>
           <property name="autoDefault">
            <bool>false</bool>
@@ -459,7 +471,11 @@ border-radius: 10px;
          </widget>
         </item>
         <item row="0" column="1">
-         <widget class="QLineEdit" name="maxWInput"/>
+         <widget class="QLineEdit" name="maxWInput">
+          <property name="inputMethodHints">
+           <set>Qt::ImhNone</set>
+          </property>
+         </widget>
         </item>
         <item row="1" column="0">
          <widget class="QPushButton" name="H">
@@ -515,6 +531,9 @@ border-radius: 10px;
        <property name="text">
         <string>&lt;</string>
        </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
        <property name="autoDefault">
         <bool>false</bool>
        </property>
@@ -541,6 +560,9 @@ border-radius: 10px;
        <property name="text">
         <string>&gt;</string>
        </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
        <property name="autoDefault">
         <bool>false</bool>
        </property>
@@ -561,6 +583,12 @@ border-radius: 10px;
      </item>
      <item row="0" column="1">
       <widget class="QSlider" name="zoomSlider">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
        <property name="orientation">
         <enum>Qt::Vertical</enum>
        </property>
@@ -576,6 +604,9 @@ border-radius: 10px;
        </property>
        <property name="text">
         <string>B</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
        </property>
        <property name="autoDefault">
         <bool>false</bool>
@@ -659,6 +690,9 @@ border-radius: 10px;
        <property name="text">
         <string>&lt;</string>
        </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
        <property name="autoDefault">
         <bool>false</bool>
        </property>
@@ -684,6 +718,9 @@ border-radius: 10px;
        </property>
        <property name="text">
         <string>&gt;</string>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
        </property>
        <property name="autoDefault">
         <bool>false</bool>
@@ -721,6 +758,9 @@ border-radius: 10px;
        <property name="text">
         <string>&lt;</string>
        </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
        <property name="autoDefault">
         <bool>false</bool>
        </property>
@@ -746,6 +786,9 @@ border-radius: 10px;
        </property>
        <property name="text">
         <string>&gt;</string>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
        </property>
        <property name="autoDefault">
         <bool>false</bool>
