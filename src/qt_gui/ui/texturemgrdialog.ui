@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>458</width>
-    <height>597</height>
+    <width>408</width>
+    <height>510</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -28,7 +28,7 @@
     <widget class="QComboBox" name="compChoice"/>
    </item>
    <item row="1" column="0" colspan="3">
-    <widget class="QGroupBox" name="groupBox">
+    <widget class="QGroupBox" name="gbTexture">
      <property name="title">
       <string>Texture</string>
      </property>
@@ -46,11 +46,11 @@
          </widget>
         </item>
         <item row="0" column="5" rowspan="4">
-         <widget class="QariGLArea" name="qariGLArea">
+         <widget class="QariGLArea" name="texGLArea">
           <property name="minimumSize">
            <size>
-            <width>175</width>
-            <height>175</height>
+            <width>128</width>
+            <height>128</height>
            </size>
           </property>
           <property name="clearColor">
@@ -79,15 +79,11 @@
           </property>
          </widget>
         </item>
-        <item row="0" column="0">
-         <widget class="QLabel" name="tlEdit">
-          <property name="text">
-           <string>Edit</string>
-          </property>
-         </widget>
-        </item>
         <item row="2" column="2" colspan="3">
          <widget class="QComboBox" name="textureSurfaceChoice"/>
+        </item>
+        <item row="1" column="2" colspan="3">
+         <widget class="QLineEdit" name="textureNameInput"/>
         </item>
         <item row="3" column="0" colspan="3">
          <widget class="QPushButton" name="addTextureButton">
@@ -95,9 +91,6 @@
            <string>Add</string>
           </property>
          </widget>
-        </item>
-        <item row="1" column="2" colspan="3">
-         <widget class="QLineEdit" name="textureNameInput"/>
         </item>
         <item row="3" column="3">
          <spacer name="horizontalSpacer">
@@ -111,6 +104,13 @@
            </size>
           </property>
          </spacer>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="tlEdit">
+          <property name="text">
+           <string>Edit</string>
+          </property>
+         </widget>
         </item>
        </layout>
       </item>
@@ -133,7 +133,7 @@
          </widget>
         </item>
         <item row="0" column="1">
-         <widget class="QariSliderInput" name="qariSliderInput"/>
+         <widget class="QariSliderInput" name="uPosInput"/>
         </item>
         <item row="1" column="0">
          <widget class="QLabel" name="tlWPosition">
@@ -146,7 +146,7 @@
          </widget>
         </item>
         <item row="1" column="1">
-         <widget class="QariSliderInput" name="qariSliderInput_2"/>
+         <widget class="QariSliderInput" name="wPosInput"/>
         </item>
         <item row="2" column="0">
          <widget class="QLabel" name="tlUScale">
@@ -159,7 +159,7 @@
          </widget>
         </item>
         <item row="2" column="1">
-         <widget class="QariSliderInput" name="qariSliderInput_3"/>
+         <widget class="QariSliderInput" name="uScaleInput"/>
         </item>
         <item row="3" column="0">
          <widget class="QLabel" name="tlWScale">
@@ -172,7 +172,7 @@
          </widget>
         </item>
         <item row="3" column="1">
-         <widget class="QariSliderInput" name="qariSliderInput_4"/>
+         <widget class="QariSliderInput" name="wScaleInput"/>
         </item>
         <item row="4" column="0">
          <widget class="QLabel" name="tlBrightness">
@@ -185,7 +185,7 @@
          </widget>
         </item>
         <item row="4" column="1">
-         <widget class="QariSliderInput" name="qariSliderInput_5"/>
+         <widget class="QariSliderInput" name="brightnessInput"/>
         </item>
         <item row="5" column="0">
          <widget class="QLabel" name="tlTransparency">
@@ -198,7 +198,7 @@
          </widget>
         </item>
         <item row="5" column="1">
-         <widget class="QariSliderInput" name="qariSliderInput_6"/>
+         <widget class="QariSliderInput" name="transparencyInput"/>
         </item>
         <item row="6" column="0" colspan="2">
          <widget class="QCheckBox" name="repeatTexure">
@@ -213,20 +213,20 @@
     </widget>
    </item>
    <item row="2" column="0" colspan="2">
-    <widget class="QGroupBox" name="groupBox_2">
+    <widget class="QGroupBox" name="gbTextureCoords">
      <property name="title">
       <string>Texture Coordinates</string>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout_5">
       <item>
-       <widget class="QCheckBox" name="checkBox_2">
+       <widget class="QCheckBox" name="flipUButton">
         <property name="text">
          <string>Flip U</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_3">
+       <widget class="QCheckBox" name="flipWButton">
         <property name="text">
          <string>Flip W</string>
         </property>
@@ -236,20 +236,20 @@
     </widget>
    </item>
    <item row="2" column="2">
-    <widget class="QGroupBox" name="groupBox_3">
+    <widget class="QGroupBox" name="gbReflectedCompTextureCoords">
      <property name="title">
       <string>Reflected Comp Texture Coords</string>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout_6">
       <item>
-       <widget class="QCheckBox" name="checkBox_4">
+       <widget class="QCheckBox" name="reflectedFlipUButton">
         <property name="text">
          <string>Flip U</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_5">
+       <widget class="QCheckBox" name="reflectedFlipWButton">
         <property name="text">
          <string>Flip W</string>
         </property>
