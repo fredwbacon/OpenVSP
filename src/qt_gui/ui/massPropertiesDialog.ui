@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>214</width>
-    <height>505</height>
+    <width>251</width>
+    <height>476</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,13 +16,6 @@
   <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
     <widget class="QGroupBox" name="gbMassProperties">
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
      <property name="title">
       <string>Mass Properties</string>
      </property>
@@ -50,24 +43,10 @@
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-          <weight>50</weight>
-          <bold>false</bold>
-         </font>
-        </property>
        </widget>
       </item>
       <item row="1" column="1">
        <widget class="QPushButton" name="ComputeButton">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-          <weight>50</weight>
-          <bold>false</bold>
-         </font>
-        </property>
         <property name="text">
          <string>Compute</string>
         </property>
@@ -78,13 +57,6 @@
       </item>
       <item row="2" column="0" colspan="2">
        <widget class="QCheckBox" name="drawCgButton">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-          <weight>50</weight>
-          <bold>false</bold>
-         </font>
-        </property>
         <property name="text">
          <string>Draw Cg</string>
         </property>
@@ -92,13 +64,6 @@
       </item>
       <item row="0" column="0" colspan="2">
        <widget class="QariSliderInput" name="numSliceInput">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-          <weight>50</weight>
-          <bold>false</bold>
-         </font>
-        </property>
         <property name="label">
          <string>Num Slice:</string>
         </property>
@@ -109,13 +74,6 @@
    </item>
    <item>
     <widget class="QGroupBox" name="gbResults">
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
      <property name="title">
       <string>Results</string>
      </property>
@@ -139,28 +97,13 @@
        <layout class="QHBoxLayout" name="horizontalLayout_2">
         <item>
          <widget class="QPushButton" name="TotalMass">
-          <property name="font">
-           <font>
-            <pointsize>10</pointsize>
-            <weight>50</weight>
-            <bold>false</bold>
-           </font>
-          </property>
           <property name="text">
            <string>Total Mass</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="totalMassOutput">
-          <property name="font">
-           <font>
-            <pointsize>10</pointsize>
-            <weight>50</weight>
-            <bold>false</bold>
-           </font>
-          </property>
-         </widget>
+         <widget class="QLineEdit" name="totalMassOutput"/>
         </item>
        </layout>
       </item>
@@ -180,28 +123,13 @@
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
-          <property name="font">
-           <font>
-            <pointsize>10</pointsize>
-            <weight>50</weight>
-            <bold>false</bold>
-           </font>
-          </property>
           <property name="text">
            <string>X Cg</string>
           </property>
          </widget>
         </item>
         <item row="0" column="1">
-         <widget class="QLineEdit" name="xCgOutput">
-          <property name="font">
-           <font>
-            <pointsize>10</pointsize>
-            <weight>50</weight>
-            <bold>false</bold>
-           </font>
-          </property>
-         </widget>
+         <widget class="QLineEdit" name="xCgOutput"/>
         </item>
         <item row="1" column="0">
          <widget class="QPushButton" name="YCg">
@@ -211,28 +139,13 @@
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
-          <property name="font">
-           <font>
-            <pointsize>10</pointsize>
-            <weight>50</weight>
-            <bold>false</bold>
-           </font>
-          </property>
           <property name="text">
            <string>Y Cg</string>
           </property>
          </widget>
         </item>
         <item row="1" column="1">
-         <widget class="QLineEdit" name="yCgOutput">
-          <property name="font">
-           <font>
-            <pointsize>10</pointsize>
-            <weight>50</weight>
-            <bold>false</bold>
-           </font>
-          </property>
-         </widget>
+         <widget class="QLineEdit" name="yCgOutput"/>
         </item>
         <item row="2" column="0">
          <widget class="QPushButton" name="ZCg">
@@ -242,28 +155,13 @@
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
-          <property name="font">
-           <font>
-            <pointsize>10</pointsize>
-            <weight>50</weight>
-            <bold>false</bold>
-           </font>
-          </property>
           <property name="text">
            <string>Z Cg</string>
           </property>
          </widget>
         </item>
         <item row="2" column="1">
-         <widget class="QLineEdit" name="zCgOutput">
-          <property name="font">
-           <font>
-            <pointsize>10</pointsize>
-            <weight>50</weight>
-            <bold>false</bold>
-           </font>
-          </property>
-         </widget>
+         <widget class="QLineEdit" name="zCgOutput"/>
         </item>
        </layout>
       </item>
@@ -283,28 +181,13 @@
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
-          <property name="font">
-           <font>
-            <pointsize>10</pointsize>
-            <weight>50</weight>
-            <bold>false</bold>
-           </font>
-          </property>
           <property name="text">
            <string>Ixx</string>
           </property>
          </widget>
         </item>
         <item row="0" column="1">
-         <widget class="QLineEdit" name="IxxOutput">
-          <property name="font">
-           <font>
-            <pointsize>10</pointsize>
-            <weight>50</weight>
-            <bold>false</bold>
-           </font>
-          </property>
-         </widget>
+         <widget class="QLineEdit" name="IxxOutput"/>
         </item>
         <item row="1" column="0">
          <widget class="QPushButton" name="Iyy">
@@ -314,28 +197,13 @@
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
-          <property name="font">
-           <font>
-            <pointsize>10</pointsize>
-            <weight>50</weight>
-            <bold>false</bold>
-           </font>
-          </property>
           <property name="text">
            <string>Iyy</string>
           </property>
          </widget>
         </item>
         <item row="1" column="1">
-         <widget class="QLineEdit" name="IyyOutput">
-          <property name="font">
-           <font>
-            <pointsize>10</pointsize>
-            <weight>50</weight>
-            <bold>false</bold>
-           </font>
-          </property>
-         </widget>
+         <widget class="QLineEdit" name="IyyOutput"/>
         </item>
         <item row="2" column="0">
          <widget class="QPushButton" name="Izz">
@@ -345,28 +213,13 @@
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
-          <property name="font">
-           <font>
-            <pointsize>10</pointsize>
-            <weight>50</weight>
-            <bold>false</bold>
-           </font>
-          </property>
           <property name="text">
            <string>Izz</string>
           </property>
          </widget>
         </item>
         <item row="2" column="1">
-         <widget class="QLineEdit" name="IzzOutput">
-          <property name="font">
-           <font>
-            <pointsize>10</pointsize>
-            <weight>50</weight>
-            <bold>false</bold>
-           </font>
-          </property>
-         </widget>
+         <widget class="QLineEdit" name="IzzOutput"/>
         </item>
        </layout>
       </item>
@@ -386,28 +239,13 @@
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
-          <property name="font">
-           <font>
-            <pointsize>10</pointsize>
-            <weight>50</weight>
-            <bold>false</bold>
-           </font>
-          </property>
           <property name="text">
            <string>Ixy</string>
           </property>
          </widget>
         </item>
         <item row="0" column="1">
-         <widget class="QLineEdit" name="IxyOutput">
-          <property name="font">
-           <font>
-            <pointsize>10</pointsize>
-            <weight>50</weight>
-            <bold>false</bold>
-           </font>
-          </property>
-         </widget>
+         <widget class="QLineEdit" name="IxyOutput"/>
         </item>
         <item row="1" column="0">
          <widget class="QPushButton" name="Ixz">
@@ -417,28 +255,13 @@
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
-          <property name="font">
-           <font>
-            <pointsize>10</pointsize>
-            <weight>50</weight>
-            <bold>false</bold>
-           </font>
-          </property>
           <property name="text">
            <string>Ixz</string>
           </property>
          </widget>
         </item>
         <item row="1" column="1">
-         <widget class="QLineEdit" name="IxzOutput">
-          <property name="font">
-           <font>
-            <pointsize>10</pointsize>
-            <weight>50</weight>
-            <bold>false</bold>
-           </font>
-          </property>
-         </widget>
+         <widget class="QLineEdit" name="IxzOutput"/>
         </item>
         <item row="2" column="0">
          <widget class="QPushButton" name="Iyz">
@@ -448,28 +271,13 @@
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
-          <property name="font">
-           <font>
-            <pointsize>10</pointsize>
-            <weight>50</weight>
-            <bold>false</bold>
-           </font>
-          </property>
           <property name="text">
            <string>Iyz</string>
           </property>
          </widget>
         </item>
         <item row="2" column="1">
-         <widget class="QLineEdit" name="IyzOutput">
-          <property name="font">
-           <font>
-            <pointsize>10</pointsize>
-            <weight>50</weight>
-            <bold>false</bold>
-           </font>
-          </property>
-         </widget>
+         <widget class="QLineEdit" name="IyzOutput"/>
         </item>
        </layout>
       </item>
@@ -478,13 +286,6 @@
    </item>
    <item>
     <widget class="QGroupBox" name="gbFileExport">
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
      <property name="title">
       <string>File Export</string>
      </property>
@@ -505,15 +306,7 @@
        <number>2</number>
       </property>
       <item>
-       <widget class="QariFileInput" name="qariFileInput">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-          <weight>50</weight>
-          <bold>false</bold>
-         </font>
-        </property>
-       </widget>
+       <widget class="QariFileInput" name="qariFileInput"/>
       </item>
      </layout>
     </widget>

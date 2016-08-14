@@ -68,8 +68,8 @@
        <widget class="QLabel" name="label">
         <property name="font">
          <font>
-          <weight>75</weight>
-          <bold>true</bold>
+          <weight>50</weight>
+          <bold>false</bold>
          </font>
         </property>
         <property name="text">
@@ -103,8 +103,8 @@
     <widget class="QGroupBox" name="gbSlicingBounds">
      <property name="font">
       <font>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <bold>false</bold>
       </font>
      </property>
      <property name="autoFillBackground">
@@ -172,8 +172,8 @@
     <widget class="QGroupBox" name="groupBox">
      <property name="font">
       <font>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <bold>false</bold>
       </font>
      </property>
      <property name="title">
@@ -202,8 +202,8 @@
        <widget class="QRadioButton" name="angleButton">
         <property name="font">
          <font>
-          <weight>75</weight>
-          <bold>true</bold>
+          <weight>50</weight>
+          <bold>false</bold>
          </font>
         </property>
         <property name="text">
@@ -228,8 +228,8 @@
        <widget class="QRadioButton" name="numberButton">
         <property name="font">
          <font>
-          <weight>75</weight>
-          <bold>true</bold>
+          <weight>50</weight>
+          <bold>false</bold>
          </font>
         </property>
         <property name="text">
@@ -251,8 +251,8 @@
     <widget class="QGroupBox" name="gbOutputFile">
      <property name="font">
       <font>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <bold>false</bold>
       </font>
      </property>
      <property name="title">

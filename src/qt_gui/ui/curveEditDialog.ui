@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>531</width>
-    <height>553</height>
+    <width>456</width>
+    <height>613</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -20,28 +20,6 @@
    <string>Curve Editor</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
-   <item>
-    <widget class="QLabel" name="label">
-     <property name="font">
-      <font>
-       <pointsize>10</pointsize>
-       <weight>50</weight>
-       <bold>false</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">border: 1px solid rgb(0,0,0);
-border-radius: 7px;
-</string>
-     </property>
-     <property name="text">
-      <string>Curve Editor</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-   </item>
    <item>
     <layout class="QGridLayout" name="gridLayout">
      <item row="0" column="0">
@@ -143,79 +121,31 @@ border-radius: 7px;
        </property>
        <layout class="QGridLayout" name="gridLayout_2">
         <property name="leftMargin">
-         <number>2</number>
+         <number>3</number>
         </property>
         <property name="topMargin">
-         <number>2</number>
+         <number>3</number>
         </property>
         <property name="rightMargin">
-         <number>2</number>
+         <number>3</number>
         </property>
         <property name="bottomMargin">
-         <number>2</number>
+         <number>3</number>
         </property>
         <property name="spacing">
          <number>3</number>
         </property>
         <item row="0" column="0">
-         <widget class="QPushButton" name="scaleXButton">
-          <property name="maximumSize">
-           <size>
-            <width>32</width>
-            <height>32</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>8</pointsize>
-            <weight>50</weight>
-            <bold>false</bold>
-           </font>
-          </property>
+         <widget class="QLabel" name="label">
           <property name="text">
            <string>X</string>
-          </property>
-          <property name="autoDefault">
-           <bool>false</bool>
-          </property>
-          <property name="flat">
-           <bool>true</bool>
           </property>
          </widget>
         </item>
         <item row="0" column="1">
-         <widget class="QSlider" name="scaleXSlider">
-          <property name="maximumSize">
-           <size>
-            <width>16777215</width>
-            <height>32</height>
-           </size>
-          </property>
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-         </widget>
+         <widget class="QariSliderInput" name="scaleXInput"/>
         </item>
         <item row="0" column="2">
-         <widget class="QLineEdit" name="scaleXInput">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>90</width>
-            <height>27</height>
-           </size>
-          </property>
-          <property name="inputMethodHints">
-           <set>Qt::ImhNone</set>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="3">
          <widget class="QPushButton" name="scaleXOK">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -250,7 +180,7 @@ border-radius: 7px;
           </property>
          </widget>
         </item>
-        <item row="0" column="4">
+        <item row="0" column="3">
          <widget class="QPushButton" name="scaleXNo">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -286,55 +216,16 @@ border-radius: 7px;
          </widget>
         </item>
         <item row="1" column="0">
-         <widget class="QPushButton" name="scaleYButton">
-          <property name="maximumSize">
-           <size>
-            <width>32</width>
-            <height>32</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>8</pointsize>
-            <weight>50</weight>
-            <bold>false</bold>
-           </font>
-          </property>
+         <widget class="QLabel" name="label_2">
           <property name="text">
            <string>Y</string>
-          </property>
-          <property name="autoDefault">
-           <bool>false</bool>
-          </property>
-          <property name="flat">
-           <bool>true</bool>
           </property>
          </widget>
         </item>
         <item row="1" column="1">
-         <widget class="QSlider" name="scaleYSlider">
-          <property name="maximumSize">
-           <size>
-            <width>16777215</width>
-            <height>32</height>
-           </size>
-          </property>
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-         </widget>
+         <widget class="QariSliderInput" name="scaleYInput"/>
         </item>
         <item row="1" column="2">
-         <widget class="QLineEdit" name="scaleYInput">
-          <property name="maximumSize">
-           <size>
-            <width>90</width>
-            <height>27</height>
-           </size>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="3">
          <widget class="QPushButton" name="scaleYOK">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -369,7 +260,7 @@ border-radius: 7px;
           </property>
          </widget>
         </item>
-        <item row="1" column="4">
+        <item row="1" column="3">
          <widget class="QPushButton" name="scaleYNo">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -429,21 +320,6 @@ border-radius: 7px;
         <set>Qt::AlignCenter</set>
        </property>
        <layout class="QGridLayout" name="gridLayout_3">
-        <property name="leftMargin">
-         <number>2</number>
-        </property>
-        <property name="topMargin">
-         <number>2</number>
-        </property>
-        <property name="rightMargin">
-         <number>2</number>
-        </property>
-        <property name="bottomMargin">
-         <number>2</number>
-        </property>
-        <property name="spacing">
-         <number>3</number>
-        </property>
         <item row="0" column="0">
          <widget class="QPushButton" name="W">
           <property name="maximumSize">
@@ -529,7 +405,7 @@ border-radius: 7px;
         </size>
        </property>
        <property name="text">
-        <string>&lt;</string>
+        <string>-</string>
        </property>
        <property name="autoRepeat">
         <bool>true</bool>
@@ -558,7 +434,7 @@ border-radius: 7px;
         </size>
        </property>
        <property name="text">
-        <string>&gt;</string>
+        <string>+</string>
        </property>
        <property name="autoRepeat">
         <bool>true</bool>
@@ -578,9 +454,6 @@ border-radius: 7px;
    </item>
    <item>
     <layout class="QGridLayout" name="gridLayout_4">
-     <item row="0" column="0" rowspan="2">
-      <widget class="QGraphicsView" name="glWin"/>
-     </item>
      <item row="0" column="1">
       <widget class="QSlider" name="zoomSlider">
        <property name="sizePolicy">
@@ -613,6 +486,17 @@ border-radius: 7px;
        </property>
        <property name="flat">
         <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" rowspan="2">
+      <widget class="QariGLArea" name="qariGLArea">
+       <property name="clearColor">
+        <color>
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
        </property>
       </widget>
      </item>
@@ -688,7 +572,7 @@ border-radius: 7px;
         </size>
        </property>
        <property name="text">
-        <string>&lt;</string>
+        <string>-</string>
        </property>
        <property name="autoRepeat">
         <bool>true</bool>
@@ -717,7 +601,7 @@ border-radius: 7px;
         </size>
        </property>
        <property name="text">
-        <string>&gt;</string>
+        <string>+</string>
        </property>
        <property name="autoRepeat">
         <bool>true</bool>
@@ -756,7 +640,7 @@ border-radius: 7px;
         </size>
        </property>
        <property name="text">
-        <string>&lt;</string>
+        <string>-</string>
        </property>
        <property name="autoRepeat">
         <bool>true</bool>
@@ -785,7 +669,7 @@ border-radius: 7px;
         </size>
        </property>
        <property name="text">
-        <string>&gt;</string>
+        <string>+</string>
        </property>
        <property name="autoRepeat">
         <bool>true</bool>
@@ -805,6 +689,18 @@ border-radius: 7px;
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QariSliderInput</class>
+   <extends>QWidget</extends>
+   <header>qarisliderinput.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QariGLArea</class>
+   <extends>QWidget</extends>
+   <header>qariglarea.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>
